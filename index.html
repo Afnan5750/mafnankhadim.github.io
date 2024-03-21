@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b3f38c3fea.js" crossorigin="anonymous"></script>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    overflow: hidden;
+}
+
+.card {
+    width: 320px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    font-family: roboto;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg h1 {
+    font-size: clamp(50px, 100vw, 22rem); /* Adjust the values as needed */
+    filter: opacity(0.5);
+}
+
+@media only screen and (max-width: 768px) {
+    .bg h1 {
+        font-size: 120px; /* Adjust the font size for smaller screens */
+    }
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 10px;
+}
+
+.card-text {
+    margin: 25px;
+    
+}
+
+.card-text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.card-text .about{
+    color: rgb(120 33 231);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(120 33 231);
+    font-size: 26px;
+}
+
+.icons .icon {
+    color: white;
+    padding: 10px;
+}
+
+.icons .icon a {
+    text-decoration: none;
+    color: white;
+}
+
+
+    </style>
+    <title>Profile Card</title>
+</head>
+
+<body>
+    <div class="bg">
+        <h1>AFNAN</h1>
+      </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-image">
+                <img src="afnan.png" alt="">
+            </div>
+            <div class="card-text">
+                <h2>M Afnan Khadim</h2>
+                <span class="about">Web Developer</span>
+                <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product.</p>
+            </div>
+            <div class="icons">
+                <div class="icon">
+                    <a href="https://github.com/Afnan5750" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <!-- <div class="type">Github</div> -->
+                </div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/m-afnan-khadim/" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <!-- <div class="type">Github</div> -->
+                </div>
+                <div class="icon">
+                    <a href="https://github.com/Afnan5750" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <!-- <div class="type">Github</div> -->
+                </div>
+                <div class="icon">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mafnankhadim74@gmail.com" title="G-mail" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                    <!-- <div class="type">Github</div> -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
